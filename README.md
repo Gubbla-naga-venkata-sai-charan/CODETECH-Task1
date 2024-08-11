@@ -1,1 +1,22 @@
-# CODETECH-Task1
+Name:GUBBALA NAGA VENAKTA SAI CHARAN
+Company:CODETECH IT SOLUTIONS
+ID:CT4VLSI3592
+Domain:VLSI
+Duration:July to August
+
+OVERVIEW OF THE PROJECT:-
+project:DEGITAL LOGIC DESIGN 
+![digital design](https://github.com/user-attachments/assets/b3d5a72f-b450-4b2b-8075-17a294c09e1a)
+The logic gate-level circuit diagram is shown above. Each full adder is built with 2 XOR gates, 2 AND gates, and an OR gate. The inputs are in the top left corner of the circuit while the outputs are on the right-hand side of each full adder. Inputs are labeled based on their value for example input 4A has a value of 4 based on its position in the circuit. This diagram provides a high-level design of how the 4-bit calculator should be built. It does not however detail how each logic gate is to be built.
+
+![digital design2 jpg](https://github.com/user-attachments/assets/2bb1f05e-f35d-466f-ab22-009c0578f01c)
+The first 4-bit calculator is shown above. There are four breadboards that are connected together. Each breadboard has one full adder. The first full adder also has dip switches to turn the inputs on or off. All of the resistor values used are 2K.  On the left side of the calculator red wires run from the top positive 5-volt rail to inputs A and B of each full adder. The carry-out of full adder 1, full adder 2, and full adder 3 feed into the carry-in location in the next full adder. On the right-hand side, red and black wires connect power to each breadboard. The main power is supplied to the top breadboard from the two wires on the top right-hand side of the calculator. All of the transistors used are NPN type with a model number of 2N2222, and model number 2N3904 will also work as these have very similar properties.
+
+In the photo the first 4 inputs are on, the second 4 inputs are on and the carry-in is off. This means that 1111 + 1111 + 0 is what is being added. The output should therefore equal 30 which is 11110 in binary. If you look at a calculator you can see that the LED lights show an output of 11110 as expected.
+
+![digital design3 jpg](https://github.com/user-attachments/assets/be526c83-c9a8-4b16-8250-135b2605cb00)
+Building a 4-bit calculator using individual transistors helps demonstrate how computers add numbers. This can be thought of as a  simple arithmetic logic unit (ALU) for a computer. In this case, the calculator is a stand-alone device that can add two 4-bit inputs together. In binary, the highest 4-bit input is 15 which is 1111 in binary. There is also a carry-in slot in the first full adder so the calculator can add 15+15+1 for a max value of 31 which is 11111 in binary.
+The photo above shows the 4-bit calculator I built on four breadboards. Two 4-slot dip switches control whether the inputs are on or off. When an input is on the dip switch will be in the up position and the LED above the dip switch will be on. When an input is off the dip switch will be in the down position and the LED above the dip switch will be off. The output is represented by the 5 LED lights on the right-hand side of the breadboard. The position of the LED determines its value. When the top LED is on it represents 1, the second LED represents 2, the third LED represents 4, the fourth LED represents 8, and the fifth LED represents 16. If all 5 LEDs are on it is 11111 in binary which is 15 in the base 10 number system.
+
+![digital design4 jpg](https://github.com/user-attachments/assets/7a50482f-0973-4d2c-a8d2-2aeb107142da)
+Now depending on availability of hardware resources and time constraints the scheduled operators and variables are allocated and binded to hardware units. Let there be one adder and two registers in the library. So the two operations (addition) of the example, even if scheduled in one control step, cannot be allocated to the single adder. Similarly, the four variables cannot be allocated to two registers. In the running example with the given resource constraints, the two operations can be done in two control steps: Step 1- variable a is allocated to Register1, variable b is allocated to Register2 and operation “out1=Register1+Register2;” is allocated to adder; Step 2- variable c is allocated to Register1, variable d is allocated to Register2 and operation “out2=Register1+Register2”; is allocated to adder. Figure 3 illustrates allocation and binding (of variables and operations) for the running example when there is one adder and two registers in the library.
